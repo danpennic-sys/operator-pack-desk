@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Operator Pack — Operator Pages</title>
+  <style>
+    :root { color-scheme: light; --ink: #14201c; --line: #d7ddd8; --paper: #f6f4ee; --accent: #1f6b4a; }
+    body { margin: 0; font: 17px/1.5 Georgia, serif; color: var(--ink); background: var(--paper); }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+    h1 { font-size: 40px; line-height: 1.1; margin: 0 0 12px; }
+    .kicker { letter-spacing: 0.08em; text-transform: uppercase; font: 12px/1.4 ui-sans-serif, system-ui, sans-serif; color: #5c675f; }
+    .price { font: 28px/1.2 ui-sans-serif, system-ui, sans-serif; margin: 24px 0; }
+    a.btn, button { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; border: 0; padding: 12px 18px; font: 15px/1 ui-sans-serif, system-ui, sans-serif; cursor: pointer; }
+    .card { border: 1px solid var(--line); padding: 16px 18px; margin: 16px 0; background: #fff; }
+    ul { padding-left: 18px; }
+    footer { margin-top: 40px; font: 13px/1.4 ui-sans-serif, system-ui, sans-serif; color: #5c675f; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="kicker">Operator Pages · Missouri</p>
+    <h1>Operator Pack</h1>
+    <p>Signed binaries, air-gap runbook, and a license file for the public QuantumGuard verifier. One function. CLI and HTTP. Three answers: PASS, FAIL, INDETERMINATE. No network. No wall-clock.</p>
+    <p class="price">$490 once &nbsp;·&nbsp; $1,490 / year</p>
+    <p><a class="btn" id="buy" href="mailto:danpennic@gmail.com?subject=Operator%20Pack%20%24490">Request Operator Pack</a></p>
+    <div class="card">
+      <strong>What is true</strong>
+      <ul>
+        <li>v1 is classical Ed25519. Post-quantum is reserved, not shipped.</li>
+        <li>Same bytes, same verdict, offline.</li>
+        <li>Open core: <a href="https://github.com/danpennic-sys/quantumguard">danpennic-sys/quantumguard</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <strong>What this is not</strong>
+      <ul>
+        <li>Not OpenMatter, not S.5313, not H.R.9129, not @QuantumGuard17.</li>
+        <li>Not a camera monitor, not an invoice product, not a host blocker.</li>
+      </ul>
+    </div>
+    <footer>Checkout stays on email until a Stripe Payment Link is pasted into config.js. Operator Pages · danpennic@gmail.com</footer>
+  </main>
+  <script src="config.js"></script>
+  <script>
+    const link = window.PACK_DESK && window.PACK_DESK.paymentLink;
+    if (link) {
+      const buy = document.getElementById("buy");
+      buy.href = link;
+      buy.textContent = "Pay $490";
+    }
+  </script>
+</body>
+</html>

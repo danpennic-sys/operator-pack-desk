@@ -1,0 +1,28 @@
+{
+  "seller": "Operator Pages LLC",
+  "contact": "danpennic@gmail.com",
+  "skus": [
+    {
+      "id": "operator-pack-once",
+      "name": "Operator Pack — single site",
+      "price_usd": 490,
+      "interval": "once",
+      "includes": ["private Operator Pack access or tarball", "LICENSE.json", "air-gap runbook", "email support"]
+    },
+    {
+      "id": "operator-pack-annual",
+      "name": "Operator Pack — annual",
+      "price_usd": 1490,
+      "interval": "year",
+      "includes": ["Operator Pack", "updates for 12 months", "email support"]
+    },
+    {
+      "id": "design-partner-packet",
+      "name": "Design-partner packet",
+      "price_usd": 0,
+      "interval": "once",
+      "includes": ["SHA-256 binder manifest", "cover letter", "RTP dual-verdict demo script"]
+    }
+  ],
+  "not_included": ["post-quantum signatures", "freshness", "key distribution", "LedgerLite", "snoop-blocker"]
+}
