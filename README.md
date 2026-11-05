@@ -8,10 +8,10 @@ Sell surface for Operator Pages. This repo does not reimplement QuantumGuard.
 - This desk is not that verifier. `desk.py` builds a design-partner packet (SHA-256 manifest + cover). Sealing still happens in the public QuantumGuard CLI.
 - This QuantumGuard is not OpenMatter, not the Senate Quantum-GUARD Act (S.5313), not H.R.9129, and not @QuantumGuard17.
 
-**List price (from MARKETING.md)**
+**Live checkout**
 
-- Operator Pack, single site: $490 one-time or $1,490/year
-- Design-partner packet: free, one per prospect, used to close the pack
+- Stripe Payment Link: `https://buy.stripe.com/dRmaEYb5w2NT2cP2G50ZW03`
+- Operator Pages + QuantumGuard yearly ($1,985 due today, then $1,495/year)
 - Contact: danpennic@gmail.com
 
 ## Run
@@ -22,7 +22,7 @@ python3 -m http.server 8080
 # open http://127.0.0.1:8080/storefront/
 ```
 
-Stripe is not live in this repo. Set `STRIPE_PAYMENT_LINK` in `storefront/config.js` after you create a Payment Link for the $490 SKU. Do not invent a live checkout URL.
+Payment link is set in `storefront/config.js`.
 
 ## What a buyer gets
 
