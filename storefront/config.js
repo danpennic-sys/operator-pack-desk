@@ -1,7 +1,6 @@
-// Paste a real Stripe Payment Link after you create the $490 SKU.
-// Leave empty until then. Do not invent a checkout URL.
+// Live Stripe Payment Link (Operator Pages $490 + QuantumGuard yearly $1,495).
 window.PACK_DESK = {
-  paymentLink: "",
+  paymentLink: "https://buy.stripe.com/dRmaEYb5w2NT2cP2G50ZW03",
   contact: "danpennic@gmail.com",
   repo: "https://github.com/danpennic-sys/quantumguard"
 };
